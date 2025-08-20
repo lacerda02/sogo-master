@@ -52,6 +52,15 @@
                         <li class="active"><a href="events.html">Eventos</a></li>
                         <li><a href="contact.html">Contacto</a></li>
                         <li><a href="reservation.html">Reservas</a></li>
+                        <li class="has-children">
+                            <a href="#" id="servicosBtn">Serviços</a>
+                            <ul class="dropdown" id="servicosDropdown" style="display: none;">
+                                <li><a href="#">Reservas de Hotéis</a></li>
+                                <li><a href="#">Passeios Turísticos</a></li>
+                                <li><a href="#">Transportes e Transfers</a></li>
+                                <li><a href="#">Guias Turísticos</a></li>
+                            </ul>
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -176,7 +185,7 @@
           </div>
           <div class="col-md-3 mb-5 pr-md-5 contact-info">
             <!-- <li>198 West 21th Street, <br> Suite 721 New York NY 10016</li> -->
-            <p><span class="d-block"><span class="ion-ios-location h5 mr-3 text-primary"></span>Endereço:</span> <span> Maputo, <br> Polana caniço</span></p>
+            <p><span class="d-block"><span class="ion-ios-location h5 mr-3 text-primary"></span>Endereço:</span> <span>Cidade de Maputo, <br> Rua da Resistencia</span></p>
             <p><span class="d-block"><span class="ion-ios-telephone h5 mr-3 text-primary"></span>Telefone:</span> <span> (+258) 847331807</span></p>
             <p><span class="d-block"><span class="ion-ios-email h5 mr-3 text-primary"></span>Email:</span> <span> savanatur@gmail.com</span></p>
           </div>
@@ -222,7 +231,19 @@
     <script src="js/bootstrap-datepicker.js"></script> 
     <script src="js/jquery.timepicker.min.js"></script> 
 
-    
+        <script>
+  const servicosBtn = document.getElementById('servicosBtn');
+  const servicosDropdown = document.getElementById('servicosDropdown');
+
+  servicosBtn.addEventListener('click', function(e) {
+    e.preventDefault(); // evita que a página suba
+    if (servicosDropdown.style.display === 'none') {
+      servicosDropdown.style.display = 'block';
+    } else {
+      servicosDropdown.style.display = 'none';
+    }
+  });
+</script>
 
     <script src="js/main.js"></script>
   </body>

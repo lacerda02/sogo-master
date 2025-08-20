@@ -45,14 +45,24 @@
                 <div class="container">
                   <div class="row full-height align-items-center">
                     <div class="col-md-6 mx-auto">
-                      <ul class="list-unstyled menu">
-                       <li ><a href="index.html">Início</a></li>
-                        <li><a href="rooms.html">Pacotes</a></li>
-                        <li><a href="about.html">Sobre nós</a></li>
-                        <li ><a href="events.html">Eventos</a></li>
-                        <li ><a href="contact.html">Contacto</a></li>
-                        <li class="active"><a href="reservation.html">Reservas</a></li>
+                      <ul class="menu">
+                          <li><a href="index.html">Início</a></li>
+                          <li><a href="rooms.html">Pacotes</a></li>
+                          <li><a href="about.html">Sobre nós</a></li>
+                          <li><a href="events.html">Eventos</a></li>
+                          <li><a href="contact.html">Contacto</a></li>
+                          <li class="active"><a href="reservation.html">Reservas</a></li>
+                          <li class="has-children">
+                            <a href="#" id="servicosBtn">Serviços</a>
+                            <ul class="dropdown" id="servicosDropdown" style="display: none;">
+                                <li><a href="#">Reservas de Hotéis</a></li>
+                                <li><a href="#">Passeios Turísticos</a></li>
+                                <li><a href="#">Transportes e Transfers</a></li>
+                                <li><a href="#">Guias Turísticos</a></li>
+                            </ul>
+                        </li>
                       </ul>
+
                     </div>
                   </div>
                 </div>
@@ -91,23 +101,23 @@
         <div class="row">
           <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
             
-           <form action="#" method="post" class="bg-white p-md-5 p-4 mb-5 border rounded shadow-sm">
+<form id="formReserva" class="bg-white p-md-5 p-4 mb-5 border rounded shadow-sm">
 
-  <!-- Dados pessoais -->
+  <!-- Dados Pessoais -->
   <div class="row">
     <div class="col-md-6 form-group">
-      <label class="text-black font-weight-bold" for="name">Nome</label>
+      <label for="name" class="text-black font-weight-bold">Nome</label>
       <input type="text" id="name" name="name" class="form-control" placeholder="Seu nome completo" required>
     </div>
     <div class="col-md-6 form-group">
-      <label class="text-black font-weight-bold" for="phone">Telefone</label>
+      <label for="phone" class="text-black font-weight-bold">Telefone</label>
       <input type="tel" id="phone" name="phone" class="form-control" placeholder="+258 ..." required>
     </div>
   </div>
 
   <div class="row">
     <div class="col-md-12 form-group">
-      <label class="text-black font-weight-bold" for="email">Email</label>
+      <label for="email" class="text-black font-weight-bold">Email</label>
       <input type="email" id="email" name="email" class="form-control" placeholder="exemplo@email.com" required>
     </div>
   </div>
@@ -115,16 +125,16 @@
   <!-- Destino -->
   <div class="row">
     <div class="col-md-12 form-group">
-      <label class="text-black font-weight-bold" for="destination">Destino</label>
+      <label for="destination" class="text-black font-weight-bold">Destino</label>
       <select id="destination" name="destination" class="form-control" required>
         <option value="">Selecione o destino</option>
-        <option value="ilha">Ilha de Moçambique</option>
-        <option value="gorongosa">Parque Nacional da Gorongosa</option>
-        <option value="vilankulo">Vilankulo</option>
-        <option value="bazaruto">Arquipélago de Bazaruto</option>
-        <option value="inhaca">Ilha da Inhaca</option>
-        <option value="ponta">Ponta do Ouro</option>
-        <option value="outro">Outro (a combinar)</option>
+        <option value="Ilha de Moçambique">Ilha de Moçambique</option>
+        <option value="Parque Nacional da Gorongosa">Parque Nacional da Gorongosa</option>
+        <option value="Vilankulo">Vilankulo</option>
+        <option value="Arquipélago de Bazaruto">Arquipélago de Bazaruto</option>
+        <option value="Ilha da Inhaca">Ilha da Inhaca</option>
+        <option value="Ponta do Ouro">Ponta do Ouro</option>
+        <option value="Outro (a combinar)">Outro (a combinar)</option>
       </select>
     </div>
   </div>
@@ -132,11 +142,11 @@
   <!-- Datas -->
   <div class="row">
     <div class="col-md-6 form-group">
-      <label class="text-black font-weight-bold" for="checkin_date">Data Check-In</label>
+      <label for="checkin_date" class="text-black font-weight-bold">Data Check-In</label>
       <input type="date" id="checkin_date" name="checkin_date" class="form-control" required>
     </div>
     <div class="col-md-6 form-group">
-      <label class="text-black font-weight-bold" for="checkout_date">Data Check-Out</label>
+      <label for="checkout_date" class="text-black font-weight-bold">Data Check-Out</label>
       <input type="date" id="checkout_date" name="checkout_date" class="form-control" required>
     </div>
   </div>
@@ -144,7 +154,7 @@
   <!-- Adultos e Crianças -->
   <div class="row">
     <div class="col-md-6 form-group">
-      <label for="adults" class="font-weight-bold text-black">Adultos</label>
+      <label for="adults" class="text-black font-weight-bold">Adultos</label>
       <select id="adults" name="adults" class="form-control" required>
         <option value="">Selecione</option>
         <option value="1">1</option>
@@ -154,7 +164,7 @@
       </select>
     </div>
     <div class="col-md-6 form-group">
-      <label for="children" class="font-weight-bold text-black">Crianças</label>
+      <label for="children" class="text-black font-weight-bold">Crianças</label>
       <select id="children" name="children" class="form-control">
         <option value="0">0</option>
         <option value="1">1</option>
@@ -165,11 +175,11 @@
     </div>
   </div>
 
-  <!-- Notas -->
+  <!-- Notas adicionais -->
   <div class="row mb-4">
     <div class="col-md-12 form-group">
-      <label class="text-black font-weight-bold" for="message">Notas adicionais</label>
-      <textarea name="message" id="message" class="form-control" cols="30" rows="5" placeholder="Observações importantes (ex: restrições alimentares, preferências de quarto, etc.)"></textarea>
+      <label for="message" class="text-black font-weight-bold">Notas adicionais</label>
+      <textarea name="message" id="message" class="form-control" cols="30" rows="5" placeholder="Observações importantes"></textarea>
     </div>
   </div>
 
@@ -183,6 +193,8 @@
   </div>
 
 </form>
+
+
 
 
           </div>
@@ -293,7 +305,7 @@
           </div>
           <div class="col-md-3 mb-5 pr-md-5 contact-info">
             <!-- <li>198 West 21th Street, <br> Suite 721 New York NY 10016</li> -->
-            <p><span class="d-block"><span class="ion-ios-location h5 mr-3 text-primary"></span>Endereço:</span> <span> Maputo, <br> Polana caniço</span></p>
+            <p><span class="d-block"><span class="ion-ios-location h5 mr-3 text-primary"></span>Endereço:</span> <span> Cidade de Maputo, <br> Rua da Resistencia</span></p>
             <p><span class="d-block"><span class="ion-ios-telephone h5 mr-3 text-primary"></span>Telefone:</span> <span> (+258) 847331807</span></p>
             <p><span class="d-block"><span class="ion-ios-email h5 mr-3 text-primary"></span>Email:</span> <span> savanatur@gmail.com</span></p>
           </div>
@@ -324,7 +336,61 @@
         </div>
       </div>
     </footer>
-    
+    <!-- EmailJS SDK -->
+<!-- EmailJS SDK -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+   (function(){
+      // Usa o teu PUBLIC KEY (não o service id)
+      emailjs.init("5DvShGDTyDwJmnQ0q"); 
+   })();
+</script>
+<script>
+document.getElementById('formReserva').addEventListener('submit', function(e) {
+    e.preventDefault(); // evita reload da página
+
+    emailjs.send("service_7mzdyqa", "template_0bo5sub", {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        destination: document.getElementById('destination').value,
+        checkin_date: document.getElementById('checkin_date').value,
+        checkout_date: document.getElementById('checkout_date').value,
+        adults: document.getElementById('adults').value,
+        children: document.getElementById('children').value,
+        message: document.getElementById('message').value
+    })
+    .then(function(response) {
+        alert("✅ Reserva enviada com sucesso!");
+        document.getElementById('formReserva').reset(); // limpa o formulário
+        localStorage.clear(); // limpa datas salvas
+    }, function(error) {
+        alert("❌ Erro ao enviar a reserva, tente novamente.");
+        console.log(error);
+    });
+});
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const checkin = document.getElementById('checkin_date');
+    const checkout = document.getElementById('checkout_date');
+
+    // restaurar valores do localStorage
+    checkin.value = localStorage.getItem('checkin_date') || '';
+    checkout.value = localStorage.getItem('checkout_date') || '';
+
+    checkin.addEventListener('change', () => {
+        localStorage.setItem('checkin_date', checkin.value);
+    });
+    checkout.addEventListener('change', () => {
+        localStorage.setItem('checkout_date', checkout.value);
+    });
+});
+</script>
+
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -339,7 +405,19 @@
     <script src="js/bootstrap-datepicker.js"></script> 
     <script src="js/jquery.timepicker.min.js"></script> 
 
-    
+    <script>
+  const servicosBtn = document.getElementById('servicosBtn');
+  const servicosDropdown = document.getElementById('servicosDropdown');
+
+  servicosBtn.addEventListener('click', function(e) {
+    e.preventDefault(); // evita que a página suba
+    if (servicosDropdown.style.display === 'none') {
+      servicosDropdown.style.display = 'block';
+    } else {
+      servicosDropdown.style.display = 'none';
+    }
+  });
+</script>
 
     <script src="js/main.js"></script>
   </body>
