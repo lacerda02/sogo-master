@@ -147,7 +147,7 @@ textarea.form-control {
       font-family: "Playfair Display", times, serif; }
       .site-navbar nav .menu li a {
         color: #000;
-        font-size: 40px;
+        font-size: 30px;
         padding: 5px 10px;
         position: relative; }
         .site-navbar nav .menu li a:hover:before {
@@ -212,16 +212,16 @@ textarea.form-control {
   height: 100vh;
   min-height: 700px; }
   .site-hero-inner .heading {
-    font-size: 80px;
+    font-size: 50px;
     font-family: "Playfair Display", times, serif;
     color: #fff;
     line-height: 1;
     font-weight: bold; }
     @media (max-width: 991.98px) {
       .site-hero-inner .heading {
-        font-size: 40px; } }
+        font-size: 35px; } }
   .site-hero-inner .sub-heading {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 200;
     color: #fff;
     line-height: 1.5; }
