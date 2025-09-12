@@ -95,116 +95,135 @@
     </section>
     <!-- END section -->
 
-    <section class="section bg-light pb-0"  >
-      <div class="container">
-       
-        <div class="row check-availabilty" id="next">
-          <div class="block-32" data-aos="fade-up" data-aos-offset="-200">
+    <!-- Seção de reserva com checkboxes -->
+<section class="section bg-light pb-0">
+  <div class="container">
+    <div class="row check-availabilty" id="next">
+      <div class="block-32" data-aos="fade-up" data-aos-offset="-200">
 
-           <form action="/reservar" method="POST" id="formReserva" class="mb-5">
-  <div class="row">
+        <form action="/reservar" method="POST" id="formReserva" class="mb-5">
+          <div class="row">
 
-    <!-- Nome -->
-    <div class="col-md-6 col-lg-3 mb-3">
-      <label for="name" class="font-weight-bold text-black">Nome</label>
-      <input type="text" id="name" name="name" class="form-control" placeholder="Seu nome completo" required>
-    </div>
+            <!-- Nome -->
+            <div class="col-md-6 col-lg-3 mb-3">
+              <label for="name" class="font-weight-bold text-black">Nome</label>
+              <input type="text" id="name" name="name" class="form-control" placeholder="Seu nome completo" required>
+            </div>
 
-    <!-- Telefone -->
-    <div class="col-md-6 col-lg-3 mb-3">
-      <label for="phone" class="font-weight-bold text-black">Telefone</label>
-      <input type="tel" id="phone" name="phone" class="form-control" placeholder="+258 ..." required>
-    </div>
+            <!-- Telefone -->
+            <div class="col-md-6 col-lg-3 mb-3">
+              <label for="phone" class="font-weight-bold text-black">Telefone</label>
+              <input type="tel" id="phone" name="phone" class="form-control" placeholder="+258 ..." required>
+            </div>
 
-    <!-- Email -->
-    <div class="col-md-6 col-lg-3 mb-3">
-      <label for="email" class="font-weight-bold text-black">Email</label>
-      <input type="email" id="email" name="email" class="form-control" placeholder="exemplo@email.com" required>
-    </div>
+            <!-- Email -->
+            <div class="col-md-6 col-lg-3 mb-3">
+              <label for="email" class="font-weight-bold text-black">Email</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="exemplo@email.com" required>
+            </div>
 
-    <!-- Destino -->
-    <div class="col-md-6 col-lg-3 mb-3">
-      <label for="destination" class="font-weight-bold text-black">Destino</label>
-      <select id="destination" name="destination" class="form-control" required>
-        <option value="">Selecione</option>
-        <option value="Ilha de Moçambique">Ilha de Moçambique</option>
-        <option value="Parque Nacional da Gorongosa">Parque Nacional da Gorongosa</option>
-        <option value="Vilankulo">Vilankulo</option>
-        <option value="Arquipélago de Bazaruto">Arquipélago de Bazaruto</option>
-        <option value="Ilha da Inhaca">Ilha da Inhaca</option>
-        <option value="Ponta do Ouro">Ponta do Ouro</option>
-        <option value="Parque Nacional de Limpopo">Parque Nacional de Limpopo</option>
-        <option value="Parque Nacional do Gilé">Parque Nacional do Gilé</option>
-        <option value="Parque Nacional de Zinave">Parque Nacional de Zinave</option>
-        <option value="Parque Nacional de Banhine">Parque Nacional de Banhine</option>
-        <option value="Parque Nacional de Chimanimane">Parque Nacional de Chimanimane</option>
-        <option value="Parque Nacional de Maputo">Parque Nacional de Maputo</option>
-        <option value="Parque Nacional de Magué">Parque Nacional de Magué</option>
-        <option value="Parque Nacional de Quirimbas">Parque Nacional de Quirimbas</option>
-        <option value="Reserva Nacional de Pomene">Reserva Nacional de Pomene</option>
-        <option value="Reserva Nacional de Marrumeu">Reserva Nacional de Marrumeu</option>
-        <option value="Reserva Especial de Niassa">Reserva Especial de Niassa</option>
-        <option value="Outro (a combinar)">Outro (a combinar)</option>
-      </select>
-    </div>
+            <!-- Destino -->
+            <div class="col-md-6 col-lg-3 mb-3">
+              <label for="destination" class="font-weight-bold text-black">Destino</label>
+              <select id="destination" name="destination" class="form-control" required>
+                <option value="">Selecione</option>
+                <option value="Ilha de Moçambique">Ilha de Moçambique</option>
+                <option value="Parque Nacional da Gorongosa">Parque Nacional da Gorongosa</option>
+                <option value="Vilankulo">Vilankulo</option>
+                <option value="Arquipélago de Bazaruto">Arquipélago de Bazaruto</option>
+                <option value="Ilha da Inhaca">Ilha da Inhaca</option>
+                <option value="Ponta do Ouro">Ponta do Ouro</option>
+                <option value="Parque Nacional de Limpopo">Parque Nacional de Limpopo</option>
+                <option value="Parque Nacional do Gilé">Parque Nacional do Gilé</option>
+                <option value="Parque Nacional de Zinave">Parque Nacional de Zinave</option>
+                <option value="Parque Nacional de Banhine">Parque Nacional de Banhine</option>
+                <option value="Parque Nacional de Chimanimane">Parque Nacional de Chimanimane</option>
+                <option value="Parque Nacional de Maputo">Parque Nacional de Maputo</option>
+                <option value="Parque Nacional de Magué">Parque Nacional de Magué</option>
+                <option value="Parque Nacional de Quirimbas">Parque Nacional de Quirimbas</option>
+                <option value="Reserva Nacional de Pomene">Reserva Nacional de Pomene</option>
+                <option value="Reserva Nacional de Marrumeu">Reserva Nacional de Marrumeu</option>
+                <option value="Reserva Especial de Niassa">Reserva Especial de Niassa</option>
+                <option value="Outro (a combinar)">Outro (a combinar)</option>
+              </select>
+            </div>
 
-    <!-- Check-In -->
-    <div class="col-md-6 col-lg-3 mb-3">
-      <label for="checkin_date" class="font-weight-bold text-black">Check-In</label>
-      <input type="date" id="checkin_date" name="checkin_date" class="form-control" required>
-    </div>
+            <!-- Check-In -->
+            <div class="col-md-6 col-lg-3 mb-3">
+              <label for="checkin_date" class="font-weight-bold text-black">Check-In</label>
+              <input type="date" id="checkin_date" name="checkin_date" class="form-control" required>
+            </div>
 
-    <!-- Check-Out -->
-    <div class="col-md-6 col-lg-3 mb-3">
-      <label for="checkout_date" class="font-weight-bold text-black">Check-Out</label>
-      <input type="date" id="checkout_date" name="checkout_date" class="form-control" required>
-    </div>
+            <!-- Check-Out -->
+            <div class="col-md-6 col-lg-3 mb-3">
+              <label for="checkout_date" class="font-weight-bold text-black">Check-Out</label>
+              <input type="date" id="checkout_date" name="checkout_date" class="form-control" required>
+            </div>
 
-    <!-- Adultos -->
-    <div class="col-md-6 col-lg-3 mb-3">
-      <label for="adults" class="font-weight-bold text-black">Adultos</label>
-      <select id="adults" name="adults" class="form-control" required>
-        <option value="">Selecione</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4+">4+</option>
-      </select>
-    </div>
+            <!-- Adultos -->
+            <div class="col-md-6 col-lg-3 mb-3">
+              <label for="adults" class="font-weight-bold text-black">Adultos</label>
+              <select id="adults" name="adults" class="form-control" required>
+                <option value="">Selecione</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4+">4+</option>
+              </select>
+            </div>
 
-    <!-- Crianças -->
-    <div class="col-md-6 col-lg-3 mb-3">
-      <label for="children" class="font-weight-bold text-black">Crianças</label>
-      <select id="children" name="children" class="form-control">
-        <option value="0">0</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4+">4+</option>
-      </select>
-    </div>
+            <!-- Crianças -->
+            <div class="col-md-6 col-lg-3 mb-3">
+              <label for="children" class="font-weight-bold text-black">Crianças</label>
+              <select id="children" name="children" class="form-control">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4+">4+</option>
+              </select>
+            </div>
 
-    <!-- Notas adicionais -->
-    <div class="col-12 mb-3">
-      <label for="message" class="font-weight-bold text-black">Notas adicionais</label>
-      <textarea id="message" name="message" class="form-control" rows="4" placeholder="Observações importantes"></textarea>
-    </div>
+            <!-- Serviços (Checkboxes) -->
+            <div class="col-12 mb-3">
+              <label class="font-weight-bold text-black">Serviços desejados</label>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="hotel" id="service-hotel" name="services[]">
+                <label class="form-check-label" for="service-hotel">Reservas de Hotéis</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="tours" id="service-tours" name="services[]">
+                <label class="form-check-label" for="service-tours">Passeios Turísticos</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="transport" id="service-transport" name="services[]">
+                <label class="form-check-label" for="service-transport">Transportes e Transfers</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="guides" id="service-guides" name="services[]">
+                <label class="form-check-label" for="service-guides">Guias Turísticos</label>
+              </div>
+            </div>
 
-    <!-- Botão -->
-    <div class="col-md-6 col-lg-3 align-self-end mb-3">
-      <button type="submit" class="btn btn-primary btn-block text-white">Fazer reserva</button>
-    </div>
+            <!-- Notas adicionais -->
+            <div class="col-12 mb-3">
+              <label for="message" class="font-weight-bold text-black">Notas adicionais</label>
+              <textarea id="message" name="message" class="form-control" rows="4" placeholder="Observações importantes"></textarea>
+            </div>
 
-  </div>
-</form>
-
+            <!-- Botão -->
+            <div class="col-md-6 col-lg-3 align-self-end mb-3">
+              <button type="submit" class="btn btn-primary btn-block text-white">Fazer reserva</button>
+            </div>
 
           </div>
+        </form>
 
-
-        </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+
 
     <section class="py-5 bg-light">
       <div class="container">
