@@ -26,374 +26,425 @@
   </head>
   <body>
     
-    <header class="site-header js-site-header">
-      <div class="container-fluid">
-        <div class="row align-items-center">
-          <div class="col-6 col-lg-4 site-logo" data-aos="fade"><a href="index.html">SavanaTour</a></div>
-          <div class="col-6 col-lg-8">
-
-
-            <div class="site-menu-toggle js-site-menu-toggle"  data-aos="fade">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <!-- END menu-toggle -->
-
-            <div class="site-navbar js-site-navbar">
-              <nav role="navigation">
-                <div class="container">
-                  <div class="row full-height align-items-center">
-                    <div class="col-md-6 mx-auto">
-                      <ul class="list-unstyled menu">
-                    <li ><a href="index.html">Início</a></li>
-                        <li class="active"><a href="rooms.html">Pacotes</a></li>
-                        <li><a href="about.html">Sobre nós</a></li>
-                        <li><a href="events.html">Eventos</a></li>
-                        <li><a href="contact.html">Contacto</a></li>
-                        <li><a href="reservation.html">Reservas</a></li>
-                        <!-- <li class="has-children">
-                            <a href="#" id="servicosBtn">Serviços</a>
-                            <ul class="dropdown" id="servicosDropdown" style="display: none;">
-                                <li><a href="#">Reservas de Hotéis</a></li>
-                                <li><a href="#">Passeios Turísticos</a></li>
-                                <li><a href="#">Transportes e Transfers</a></li>
-                                <li><a href="#">Guias Turísticos</a></li>
-                            </ul>
-                        </li> -->
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </nav>
-            </div>
-          </div>
-        </div>
+<header class="site-header js-site-header">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      
+      <div class="col-6 col-lg-4 site-logo" data-aos="fade">
+        <a href="index.html">SavanaTour</a>
+            <button id="lang-toggle" class="btn btn-outline-light ms-3" aria-label="Trocar idioma">EN</button>
       </div>
-    </header>
+      
+      <div class="col-6 col-lg-8">
+        <div class="site-menu-toggle js-site-menu-toggle" data-aos="fade">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- END menu-toggle -->
+
+        <div class="site-navbar js-site-navbar">
+          <nav role="navigation">
+            <div class="container">
+              <div class="row full-height align-items-center">
+                <div class="col-md-6 mx-auto">
+                  <ul class="list-unstyled menu">
+                    <li><a href="index.html" data-pt="Início" data-en="Home">Início</a></li>
+                    <li class="active"><a href="rooms.html" data-pt="Pacotes" data-en="Packages">Pacotes</a></li>
+                    <li><a href="about.html" data-pt="Sobre nós" data-en="About Us">Sobre nós</a></li>
+                    <li><a href="events.html" data-pt="Eventos" data-en="Events">Eventos</a></li>
+                    <li><a href="contact.html" data-pt="Contacto" data-en="Contact">Contacto</a></li>
+                    <li><a href="reservation.html" data-pt="Reservas" data-en="Reservation">Reservas</a></li>
+                    <!-- Exemplo dropdown (descomentado se quiser)
+                    <li class="has-children">
+                        <a href="#" id="servicosBtn" data-pt="Serviços" data-en="Services">Serviços</a>
+                        <ul class="dropdown" id="servicosDropdown" style="display: none;">
+                            <li><a href="#" data-pt="Reservas de Hotéis" data-en="Hotel Reservations">Reservas de Hotéis</a></li>
+                            <li><a href="#" data-pt="Passeios Turísticos" data-en="Tour Packages">Passeios Turísticos</a></li>
+                            <li><a href="#" data-pt="Transportes e Transfers" data-en="Transport & Transfers">Transportes e Transfers</a></li>
+                            <li><a href="#" data-pt="Guias Turísticos" data-en="Tour Guides">Guias Turísticos</a></li>
+                        </ul>
+                    </li>
+                    -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+
     <!-- END head -->
 
-    <section class="site-hero inner-page overlay" style="background-image: url(images/1.jpg)" data-stellar-background-ratio="0.5">
-      <div class="container">
-        <div class="row site-hero-inner justify-content-center align-items-center">
-          <div class="col-md-10 text-center" data-aos="fade">
-            <h1 class="heading mb-3">Pacotes</h1>
-            <ul class="custom-breadcrumbs mb-4">
-              <li><a href="index.html">Inicio</a></li>
-              <li>&bullet;</li>
-              <li>Pacotes</li>
-            </ul>
-          </div>
-        </div>
+  <section class="site-hero inner-page overlay" style="background-image: url(images/1.jpg)" data-stellar-background-ratio="0.5">
+  <div class="container">
+    <div class="row site-hero-inner justify-content-center align-items-center">
+      <div class="col-md-10 text-center" data-aos="fade">
+        <h1 class="heading mb-3" data-pt="Pacotes" data-en="Packages">Pacotes</h1>
+        <ul class="custom-breadcrumbs mb-4">
+          <li><a href="index.html" data-pt="Início" data-en="Home">Início</a></li>
+          <li>&bullet;</li>
+          <li data-pt="Pacotes" data-en="Packages">Pacotes</li>
+        </ul>
       </div>
+    </div>
+  </div>
 
-      <a class="mouse smoothscroll" href="#next">
-        <div class="mouse-icon">
-          <span class="mouse-wheel"></span>
-        </div>
-      </a>
-    </section>
+  <a class="mouse smoothscroll" href="#next">
+    <div class="mouse-icon">
+      <span class="mouse-wheel"></span>
+    </div>
+  </a>
+</section>
+
     <!-- END section -->
 
-    <section class="section pb-4">
-      <div class="container">
-       
-        <div class="row check-availabilty" id="next">
-          <div class="block-32" data-aos="fade-up" data-aos-offset="-200">
+    <section class="section bg-light pb-0">
+  <div class="container">
+    <div class="row check-availabilty" id="next">
+      <div class="block-32" data-aos="fade-up" data-aos-offset="-200">
 
-            <form action="/reservar" method="POST" id="formReserva" class="mb-5">
-  <div class="row">
+        <form action="/reservar" method="POST" id="formReserva" class="mb-5">
+          <div class="row">
 
-    <!-- Nome -->
-    <div class="col-md-6 col-lg-3 mb-3">
-      <label for="name" class="font-weight-bold text-black">Nome</label>
-      <input type="text" id="name" name="name" class="form-control" placeholder="Seu nome completo" required>
+            <!-- Nome -->
+            <div class="col-md-6 col-lg-3 mb-3">
+              <label for="name" class="font-weight-bold text-black"
+                     data-pt="Nome" data-en="Name">Nome</label>
+              <input type="text" id="name" name="name" class="form-control"
+                     data-pt-placeholder="Seu nome completo" data-en-placeholder="Your full name"
+                     placeholder="Seu nome completo" required>
+            </div>
+
+            <!-- Telefone -->
+            <div class="col-md-6 col-lg-3 mb-3">
+              <label for="phone" class="font-weight-bold text-black"
+                     data-pt="Telefone" data-en="Phone">Telefone</label>
+              <input type="tel" id="phone" name="phone" class="form-control"
+                     data-pt-placeholder="+258 ..." data-en-placeholder="+258 ..."
+                     placeholder="+258 ..." required>
+            </div>
+
+            <!-- Email -->
+            <div class="col-md-6 col-lg-3 mb-3">
+              <label for="email" class="font-weight-bold text-black"
+                     data-pt="Email" data-en="Email">Email</label>
+              <input type="email" id="email" name="email" class="form-control"
+                     data-pt-placeholder="exemplo@email.com" data-en-placeholder="example@email.com"
+                     placeholder="exemplo@email.com" required>
+            </div>
+
+            <!-- Destino -->
+            <div class="col-md-6 col-lg-3 mb-3">
+              <label for="destination" class="font-weight-bold text-black"
+                     data-pt="Destino" data-en="Destination">Destino</label>
+              <select id="destination" name="destination" class="form-control" required>
+                <option value="" data-pt="Selecione" data-en="Select">Selecione</option>
+                <option value="Ilha de Moçambique" data-pt="Ilha de Moçambique" data-en="Mozambique Island">Ilha de Moçambique</option>
+                <option value="Parque Nacional da Gorongosa" data-pt="Parque Nacional da Gorongosa" data-en="Gorongosa National Park">Parque Nacional da Gorongosa</option>
+                <option value="Vilankulo" data-pt="Vilankulo" data-en="Vilankulo">Vilankulo</option>
+                <option value="Arquipélago de Bazaruto" data-pt="Arquipélago de Bazaruto" data-en="Bazaruto Archipelago">Arquipélago de Bazaruto</option>
+                <option value="Ilha da Inhaca" data-pt="Ilha da Inhaca" data-en="Inhaca Island">Ilha da Inhaca</option>
+                <option value="Ponta do Ouro" data-pt="Ponta do Ouro" data-en="Ponta do Ouro">Ponta do Ouro</option>
+                <option value="Parque Nacional de Limpopo" data-pt="Parque Nacional de Limpopo" data-en="Limpopo National Park">Parque Nacional de Limpopo</option>
+                <option value="Parque Nacional do Gilé" data-pt="Parque Nacional do Gilé" data-en="Gilé National Park">Parque Nacional do Gilé</option>
+                <option value="Parque Nacional de Zinave" data-pt="Parque Nacional de Zinave" data-en="Zinave National Park">Parque Nacional de Zinave</option>
+                <option value="Parque Nacional de Banhine" data-pt="Parque Nacional de Banhine" data-en="Banhine National Park">Parque Nacional de Banhine</option>
+                <option value="Parque Nacional de Chimanimane" data-pt="Parque Nacional de Chimanimane" data-en="Chimanimani National Park">Parque Nacional de Chimanimane</option>
+                <option value="Parque Nacional de Maputo" data-pt="Parque Nacional de Maputo" data-en="Maputo National Park">Parque Nacional de Maputo</option>
+                <option value="Parque Nacional de Magué" data-pt="Parque Nacional de Magué" data-en="Magué National Park">Parque Nacional de Magué</option>
+                <option value="Parque Nacional de Quirimbas" data-pt="Parque Nacional de Quirimbas" data-en="Quirimbas National Park">Parque Nacional de Quirimbas</option>
+                <option value="Reserva Nacional de Pomene" data-pt="Reserva Nacional de Pomene" data-en="Pomene National Reserve">Reserva Nacional de Pomene</option>
+                <option value="Reserva Nacional de Marrumeu" data-pt="Reserva Nacional de Marrumeu" data-en="Marrumeu National Reserve">Reserva Nacional de Marrumeu</option>
+                <option value="Reserva Especial de Niassa" data-pt="Reserva Especial de Niassa" data-en="Niassa Special Reserve">Reserva Especial de Niassa</option>
+                <option value="Outro (a combinar)" data-pt="Outro (a combinar)" data-en="Other (to arrange)">Outro (a combinar)</option>
+              </select>
+            </div>
+
+            <!-- Check-In -->
+            <div class="col-md-6 col-lg-3 mb-3">
+              <label for="checkin_date" class="font-weight-bold text-black"
+                     data-pt="Check-In" data-en="Check-In">Check-In</label>
+              <input type="date" id="checkin_date" name="checkin_date" class="form-control" required>
+            </div>
+
+            <!-- Check-Out -->
+            <div class="col-md-6 col-lg-3 mb-3">
+              <label for="checkout_date" class="font-weight-bold text-black"
+                     data-pt="Check-Out" data-en="Check-Out">Check-Out</label>
+              <input type="date" id="checkout_date" name="checkout_date" class="form-control" required>
+            </div>
+
+            <!-- Adultos -->
+            <div class="col-md-6 col-lg-3 mb-3">
+              <label for="adults" class="font-weight-bold text-black"
+                     data-pt="Adultos" data-en="Adults">Adultos</label>
+              <select id="adults" name="adults" class="form-control" required>
+                <option value="" data-pt="Selecione" data-en="Select">Selecione</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4+">4+</option>
+              </select>
+            </div>
+
+            <!-- Crianças -->
+            <div class="col-md-6 col-lg-3 mb-3">
+              <label for="children" class="font-weight-bold text-black"
+                     data-pt="Crianças" data-en="Children">Crianças</label>
+              <select id="children" name="children" class="form-control">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4+">4+</option>
+              </select>
+            </div>
+
+            <!-- Notas adicionais -->
+            <div class="col-12 mb-3">
+              <label for="message" class="font-weight-bold text-black"
+                     data-pt="Notas adicionais" data-en="Additional notes">Notas adicionais</label>
+              <textarea id="message" name="message" class="form-control" rows="4"
+                        data-pt-placeholder="Observações importantes"
+                        data-en-placeholder="Important notes"
+                        placeholder="Observações importantes"></textarea>
+            </div>
+
+            <!-- Botão -->
+            <div class="col-md-6 col-lg-3 align-self-end mb-3">
+              <button type="submit" class="btn btn-primary btn-block text-white"
+                      data-pt="Fazer reserva" data-en="Make a Booking">Fazer reserva</button>
+            </div>
+
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+ <section class="section">
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <a href="#" class="room">
+          <figure class="img-wrap">
+            <img src="images/TURISMO-696x522-1.jpg" alt="Itinerário" class="img-fluid mb-3">
+          </figure>
+          <div class="p-3 text-center room-info">
+            <h2 data-pt="Itinerário" data-en="Itinerary">Itinerário</h2>
+            <span class="text-uppercase letter-spacing-1" data-pt="1000Mts / 1 dia" data-en="1000Mts / 1 day">1000Mts / 1 dia</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <a href="#" class="room">
+          <figure class="img-wrap">
+            <img src="images/10.jpg" alt="Retiro" class="img-fluid mb-3">
+          </figure>
+          <div class="p-3 text-center room-info">
+            <h2 data-pt="Retiro" data-en="Retreat">Retiro</h2>
+            <span class="text-uppercase letter-spacing-1" data-pt="3000Mts / 2 dias" data-en="3000Mts / 2 days">3000Mts / 2 dias</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <a href="#" class="room">
+          <figure class="img-wrap">
+            <img src="images/AnyConv.com__1920-nahyeeni-lodge-21.webp" alt="Excursões" class="img-fluid mb-3">
+          </figure>
+          <div class="p-3 text-center room-info">
+            <h2 data-pt="Excursões" data-en="Excursions">Excursões</h2>
+            <span class="text-uppercase letter-spacing-1" data-pt="5000 / 3 dias" data-en="5000 / 3 days">5000 / 3 dias</span>
+          </div>
+        </a>
+      </div>
     </div>
 
-    <!-- Telefone -->
-    <div class="col-md-6 col-lg-3 mb-3">
-      <label for="phone" class="font-weight-bold text-black">Telefone</label>
-      <input type="tel" id="phone" name="phone" class="form-control" placeholder="+258 ..." required>
+    <div class="row">
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <a href="#" class="room">
+          <figure class="img-wrap">
+            <img src="images/11.jpg" alt="Itinerário" class="img-fluid mb-3">
+          </figure>
+          <div class="p-3 text-center room-info">
+            <h2 data-pt="Itinerário" data-en="Itinerary">Itinerário</h2>
+            <span class="text-uppercase letter-spacing-1" data-pt="1000Mts / 1 dia" data-en="1000Mts / 1 day">1000Mts / 1 dia</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <a href="#" class="room">
+          <figure class="img-wrap">
+            <img src="images/Turismo-em-Mocambique-jpg.webp" alt="Retiro" class="img-fluid mb-3">
+          </figure>
+          <div class="p-3 text-center room-info">
+            <h2 data-pt="Retiro" data-en="Retreat">Retiro</h2>
+            <span class="text-uppercase letter-spacing-1" data-pt="3000Mts / 2 dias" data-en="3000Mts / 2 days">3000Mts / 2 dias</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <a href="#" class="room">
+          <figure class="img-wrap">
+            <img src="images/6.jpg" alt="Excursões" class="img-fluid mb-3">
+          </figure>
+          <div class="p-3 text-center room-info">
+            <h2 data-pt="Excursões" data-en="Excursions">Excursões</h2>
+            <span class="text-uppercase letter-spacing-1" data-pt="5000 / 3 dias" data-en="5000 / 3 days">5000 / 3 dias</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+  <section class="section bg-light">
+  <div class="container">
+    <div class="row justify-content-center text-center mb-5">
+      <div class="col-md-7">
+        <h2 class="heading" data-aos="fade" data-pt="Melhores Pacotes" data-en="Best Packages">Melhores Pacotes</h2>
+        <p data-aos="fade" 
+           data-pt="Explore os nossos pacotes turísticos <br> Ilha de Moçambique, Ponta do Ouro, Gorongosa, Inhambane. <br> 👨‍👩‍👧‍👦 Família & Amigos: Viagens em grupo, roteiros culturais e passeios educativos.<br> ❤️ Lua de Mel & Românticos: Pacotes exclusivos para casais que desejam celebrar momentos especiais.<br> 🚌 Excursões & Safáris: Descubra a beleza natural com guias experientes e roteiros completos."
+           data-en="Explore our travel packages <br> Ilha de Moçambique, Ponta do Ouro, Gorongosa, Inhambane. <br> 👨‍👩‍👧‍👦 Family & Friends: Group trips, cultural itineraries, and educational tours.<br> ❤️ Honeymoon & Romantic: Exclusive packages for couples to celebrate special moments.<br> 🚌 Excursions & Safaris: Discover natural beauty with experienced guides and complete itineraries.">
+          Explore os nossos pacotes turísticos <br>
+          Ilha de Moçambique, Ponta do Ouro, Gorongosa, Inhambane. <br>
+          👨‍👩‍👧‍👦 Família & Amigos: Viagens em grupo, roteiros culturais e passeios educativos.<br>
+          ❤️ Lua de Mel & Românticos: Pacotes exclusivos para casais que desejam celebrar momentos especiais.<br>
+          🚌 Excursões & Safáris: Descubra a beleza natural com guias experientes e roteiros completos.
+        </p>
+      </div>
+    </div>
+  
+    <div class="site-block-half d-block d-lg-flex bg-white" data-aos="fade" data-aos-delay="100">
+      <a href="#" class="image d-block bg-image-2" style="background-image: url('images/img_1.jpg');"></a>
+      <div class="text">
+        <span class="d-block mb-4">
+          <span class="display-4 text-primary" data-pt="1999Mts" data-en="1999Mts">1999Mts</span> 
+          <span class="text-uppercase letter-spacing-2" data-pt="/ por noite" data-en="/ per night">/ por noite</span>
+        </span>
+        <h2 class="mb-4" data-pt="Quarto Família" data-en="Family Room">Quarto Família</h2>
+        <p data-pt="O melhor preço do mercado." data-en="Best price in the market.">O melhor preço do mercado.</p>
+        <p><a href="#" class="btn btn-primary text-white" data-pt="Agende agora" data-en="Book Now">Agende agora</a></p>
+      </div>
     </div>
 
-    <!-- Email -->
-    <div class="col-md-6 col-lg-3 mb-3">
-      <label for="email" class="font-weight-bold text-black">Email</label>
-      <input type="email" id="email" name="email" class="form-control" placeholder="exemplo@email.com" required>
-    </div>
-
-    <!-- Destino -->
-    <div class="col-md-6 col-lg-3 mb-3">
-      <label for="destination" class="font-weight-bold text-black">Destino</label>
-      <select id="destination" name="destination" class="form-control" required>
-        <option value="">Selecione</option>
-        <option value="Ilha de Moçambique">Ilha de Moçambique</option>
-        <option value="Parque Nacional da Gorongosa">Parque Nacional da Gorongosa</option>
-        <option value="Vilankulo">Vilankulo</option>
-        <option value="Arquipélago de Bazaruto">Arquipélago de Bazaruto</option>
-        <option value="Ilha da Inhaca">Ilha da Inhaca</option>
-        <option value="Ilhas Primeiras e Segundas">Ilhas Primeiras e Segundas</option>
-        <option value="Ponta do Ouro">Ponta do Ouro</option>
-        <option value="Parque Nacional de Limpopo">Parque Nacional de Limpopo</option>
-        <option value="Parque Nacional do Gilé">Parque Nacional do Gilé</option>
-        <option value="Parque Nacional de Zinave">Parque Nacional de Zinave</option>
-        <option value="Parque Nacional de Banhine">Parque Nacional de Banhine</option>
-        <option value="Parque Nacional de Chimanimane">Parque Nacional de Chimanimane</option>
-        <option value="Parque Nacional de Maputo">Parque Nacional de Maputo</option>
-        <option value="Parque Nacional de Magué">Parque Nacional de Magué</option>
-        <option value="Parque Nacional de Quirimbas">Parque Nacional de Quirimbas</option>
-        <option value="Reserva Nacional de Pomene">Reserva Nacional de Pomene</option>
-        <option value="Reserva Nacional de Marrumeu">Reserva Nacional de Marrumeu</option>
-        <option value="Reserva Especial de Niassa">Reserva Especial de Niassa</option>
-        <option value="Outro (a combinar)">Outro (a combinar)</option>
-      </select>
-    </div>
-
-    <!-- Check-In -->
-    <div class="col-md-6 col-lg-3 mb-3">
-      <label for="checkin_date" class="font-weight-bold text-black">Check-In</label>
-      <input type="date" id="checkin_date" name="checkin_date" class="form-control" required>
-    </div>
-
-    <!-- Check-Out -->
-    <div class="col-md-6 col-lg-3 mb-3">
-      <label for="checkout_date" class="font-weight-bold text-black">Check-Out</label>
-      <input type="date" id="checkout_date" name="checkout_date" class="form-control" required>
-    </div>
-
-    <!-- Adultos -->
-    <div class="col-md-6 col-lg-3 mb-3">
-      <label for="adults" class="font-weight-bold text-black">Adultos</label>
-      <select id="adults" name="adults" class="form-control" required>
-        <option value="">Selecione</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4+">4+</option>
-      </select>
-    </div>
-
-    <!-- Crianças -->
-    <div class="col-md-6 col-lg-3 mb-3">
-      <label for="children" class="font-weight-bold text-black">Crianças</label>
-      <select id="children" name="children" class="form-control">
-        <option value="0">0</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4+">4+</option>
-      </select>
-    </div>
-
-    <!-- Notas adicionais -->
-    <div class="col-12 mb-3">
-      <label for="message" class="font-weight-bold text-black">Notas adicionais</label>
-      <textarea id="message" name="message" class="form-control" rows="4" placeholder="Observações importantes"></textarea>
-    </div>
-
-    <!-- Botão -->
-    <div class="col-md-6 col-lg-3 align-self-end mb-3">
-      <button type="submit" class="btn btn-primary btn-block text-white">Fazer reserva</button>
+    <div class="site-block-half d-block d-lg-flex bg-white" data-aos="fade" data-aos-delay="200">
+      <a href="#" class="image d-block bg-image-2 order-2" style="background-image: url('images/img_2.jpg');"></a>
+      <div class="text order-1">
+        <span class="d-block mb-4">
+          <span class="display-4 text-primary" data-pt="999Mts" data-en="999Mts">999Mts</span> 
+          <span class="text-uppercase letter-spacing-2" data-pt="/ por noite" data-en="/ per night">/ por noite</span>
+        </span>
+        <h2 class="mb-4" data-pt="Quarto Simples" data-en="Simple Room">Quarto Simples</h2>
+        <p data-pt="O melhor preço do mercado." data-en="Best price in the market.">O melhor preço do mercado.</p>
+        <p><a href="#" class="btn btn-primary text-white" data-pt="Agende agora" data-en="Book Now">Agende agora</a></p>
+      </div>
     </div>
 
   </div>
-</form>
-          </div>
+</section>
 
 
-        </div>
-      </div>
-    </section>
-
-    
-    <section class="section">
-      <div class="container">
-        
-        <div class="row">
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
-            <a href="#" class="room">
-              <figure class="img-wrap">
-                <img src="images\TURISMO-696x522-1.jpg" alt="Free website template" class="img-fluid mb-3">
-              </figure>
-              <div class="p-3 text-center room-info">
-                <h2>Itinerário </h2>
-                <span class="text-uppercase letter-spacing-1">1000Mts / 1 dia</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
-            <a href="#" class="room">
-              <figure class="img-wrap">
-                <img src="images\10.jpg" alt="Free website template" class="img-fluid mb-3">
-              </figure>
-              <div class="p-3 text-center room-info">
-                <h2>Retiro</h2>
-                <span class="text-uppercase letter-spacing-1">3000Mts / 2 dias</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
-            <a href="#" class="room">
-              <figure class="img-wrap">
-                <img src="images\AnyConv.com__1920-nahyeeni-lodge-21.webp" alt="Free website template" class="img-fluid mb-3">
-              </figure>
-              <div class="p-3 text-center room-info">
-                <h2>Excursões</h2>
-                <span class="text-uppercase letter-spacing-1">5000 /3 dias</span>
-              </div>
-            </a>
-          </div>
-
-
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
-            <a href="#" class="room">
-              <figure class="img-wrap">
-                <img src="images\11.jpg" alt="Free website template" class="img-fluid mb-3">
-              </figure>
-              <div class="p-3 text-center room-info">
-                <h2>Itinerário</h2>
-                <span class="text-uppercase letter-spacing-1">1000Mts / 1 dia</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
-            <a href="#" class="room">
-              <figure class="img-wrap">
-                <img src="images\Turismo-em-Mocambique-jpg.webp" alt="Free website template" class="img-fluid mb-3">
-              </figure>
-              <div class="p-3 text-center room-info">
-                <h2>Retiro</h2>
-                <span class="text-uppercase letter-spacing-1">3000Mts / 2 dias</span>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-6 col-lg-4" data-aos="fade-up">
-            <a href="#" class="room">
-              <figure class="img-wrap">
-                <img src="images\6.jpg" alt="Free website template" class="img-fluid mb-3">
-              </figure>
-              <div class="p-3 text-center room-info">
-                <h2>Excursões.</h2>
-                <span class="text-uppercase letter-spacing-1">5000 /3 dias</span>
-              </div>
-            </a>
-          </div>
-
-
-        </div>
-      </div>
-    </section>
-    
-    <section class="section bg-light">
-
-      <div class="container">
-        <div class="row justify-content-center text-center mb-5">
-          <div class="col-md-7">
-            <h2 class="heading" data-aos="fade">Melhores Pacotes</h2>
-            <p data-aos="fade">Explore os nossos pacotes turísticos <br>
-
-Ilha de Moçambique, Ponta do Ouro, Gorongosa, Inhambane. <br>
-
-👨‍👩‍👧‍👦 Família & Amigos: Viagens em grupo, roteiros culturais e passeios educativos.<br>
-
-❤️ Lua de Mel & Românticos: Pacotes exclusivos para casais que desejam celebrar momentos especiais.<br>
-
-🚌 Excursões & Safáris: Descubra a beleza natural com guias experientes e roteiros completos.</p>
-          </div>
-        </div>
+<section class="section bg-image overlay" style="background-image: url('images/4.jpg');">
+  <div class="container">
+    <div class="row align-items-center">
       
-        <div class="site-block-half d-block d-lg-flex bg-white" data-aos="fade" data-aos-delay="100">
-          <a href="#" class="image d-block bg-image-2" style="background-image: url('images/img_1.jpg');"></a>
-          <div class="text">
-            <span class="d-block mb-4"><span class="display-4 text-primary">1999Mts</span> <span class="text-uppercase letter-spacing-2">/ por noite</span> </span>
-            <h2 class="mb-4">Quarto Familia</h2>
-            <p>A melhor preço do mercado.</p>
-            <p><a href="#" class="btn btn-primary text-white">Agenda agora</a></p>
-          </div>
-        </div>
-        <div class="site-block-half d-block d-lg-flex bg-white" data-aos="fade" data-aos-delay="200">
-          <a href="#" class="image d-block bg-image-2 order-2" style="background-image: url('images/img_2.jpg');"></a>
-          <div class="text order-1">
-            <span class="d-block mb-4"><span class="display-4 text-primary">999Mts</span> <span class="text-uppercase letter-spacing-2">/ por noite</span> </span>
-            <h2 class="mb-4">Quarto simples</h2>
-            <p>A melhor preço do mercado.</p>
-            <p><a href="#" class="btn btn-primary text-white">Agenda agora</a></p>
-          </div>
-        </div>
+      <div class="col-12 col-md-6 text-center mb-4 mb-md-0 text-md-left" data-aos="fade-up">
+        <h2 class="text-white font-weight-bold" 
+            data-pt="A melhor Agência. Reserve Agora!" 
+            data-en="The Best Agency. Book Now!">
+          A melhor Agência. Reserve Agora!
+        </h2>
+      </div>
+      
+      <div class="col-12 col-md-6 text-center text-md-right" data-aos="fade-up" data-aos-delay="200">
+        <a href="reservation.html" class="btn btn-outline-white-primary py-3 text-white px-5" 
+           data-pt="Reserve Agora" 
+           data-en="Book Now">
+          Reserve Agora
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</section>
 
-      </div>
-    </section>
+     <footer class="section footer-section">
+  <div class="container">
+    <div class="row mb-4">
 
-    <section class="section bg-image overlay" style="background-image: url('images/4.jpg');">
-      <div class="container" >
-        <div class="row align-items-center">
-       <div class="col-12 col-md-6 text-center mb-4 mb-md-0 text-md-left" data-aos="fade-up">
-              <h2 class="text-white font-weight-bold">A melhor Agencia. Reserve Agora!</h2>
-            </div>
-            <div class="col-12 col-md-6 text-center text-md-right" data-aos="fade-up" data-aos-delay="200">
-              <a href="reservation.html" class="btn btn-outline-white-primary py-3 text-white px-5">Reserve Agora</a>
-            </div>
+      <!-- Coluna 1 -->
+      <div class="col-md-3 mb-5">
+        <ul class="list-unstyled link">
+          <li><a href="#" data-pt="Sobre nós" data-en="About Us">Sobre nós</a></li>
+          <li><a href="#" data-pt="Termos &amp; Condições" data-en="Terms &amp; Conditions">Termos &amp; Condições</a></li>
+          <li><a href="#" data-pt="Políticas de privacidade" data-en="Privacy Policy">Políticas de privacidade</a></li>
+          <li><a href="#" data-pt="Pacotes" data-en="Packages">Pacotes</a></li>
+        </ul>
       </div>
-    </section>
-    
-    <footer class="section footer-section">
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col-md-3 mb-5">
-            <ul class="list-unstyled link">
-              <li><a href="#">Sobre nós</a></li>
-              <li><a href="#">Termos &amp; Condições</a></li>
-              <li><a href="#">Politicas de privacidade</a></li>
-             <li><a href="#">Pacotes</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3 mb-5">
-            <ul class="list-unstyled link">
-              <li><a href="#">Pacotes &amp; Promocoes</a></li>
-              <li><a href="#">Sobre nós</a></li>
-              <li><a href="#">Contacto</a></li>
-              <li><a href="#">Restaurante</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3 mb-5 pr-md-5 contact-info">
-            <!-- <li>198 West 21th Street, <br> Suite 721 New York NY 10016</li> -->
-            <p><span class="d-block"><span class="ion-ios-location h5 mr-3 text-primary"></span>Endereço:</span> <span>Cidade de Maputo, <br> Rua da Resistencia</span></p>
-            <p><span class="d-block"><span class="ion-ios-telephone h5 mr-3 text-primary"></span>Telefone:</span> <span> (+258) 847331807</span></p>
-            <p><span class="d-block"><span class="ion-ios-email h5 mr-3 text-primary"></span>Email:</span> <span> savanatur@gmail.com</span></p>
-          </div>
-          <div class="col-md-3 mb-5">
-            <p>Envia-nos uma mensagem</p>
-            <form action="#" class="footer-newsletter">
-              <div class="form-group">
-                <input type="email" class="form-control" placeholder="Email...">
-                <button type="submit" class="btn"><span class="fa fa-paper-plane"></span></button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="row pt-5">
-          <p class="col-md-6 text-left">
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Design  <i class="icon-heart-o" aria-hidden="true"></i> by <a href="https://madinaTechx.com" target="_blank" >Leonardo Luis Lacerda</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          </p>
-            
-          <p class="col-md-6 text-right social">
-            <a href="#"><span class="fa fa-tripadvisor"></span></a>
-            <a href="#"><span class="fa fa-facebook"></span></a>
-            <a href="#"><span class="fa fa-twitter"></span></a>
-            <a href="#"><span class="fa fa-linkedin"></span></a>
-            <a href="#"><span class="fa fa-vimeo"></span></a>
-          </p>
-        </div>
+
+      <!-- Coluna 2 -->
+      <div class="col-md-3 mb-5">
+        <ul class="list-unstyled link">
+          <li><a href="#" data-pt="Pacotes &amp; Promoções" data-en="Packages &amp; Promotions">Pacotes &amp; Promoções</a></li>
+          <li><a href="#" data-pt="Sobre nós" data-en="About Us">Sobre nós</a></li>
+          <li><a href="#" data-pt="Contacto" data-en="Contact">Contacto</a></li>
+          <li><a href="#" data-pt="Restaurante" data-en="Restaurant">Restaurante</a></li>
+        </ul>
       </div>
-    </footer>
+
+      <!-- Coluna 3 -->
+      <div class="col-md-3 mb-5 pr-md-5 contact-info">
+        <p><span class="d-block"><span class="ion-ios-location h5 mr-3 text-primary"></span data-pt="Endereço:" data-en="Address:">Endereço:</span> <span data-pt="Cidade de Maputo, Rua da Resistência" data-en="Maputo City, Rua da Resistencia">Cidade de Maputo, <br> Rua da Resistencia</span></p>
+        <p><span class="d-block"><span class="ion-ios-telephone h5 mr-3 text-primary"></span data-pt="Telefone:" data-en="Phone:">Telefone:</span> <span> (+258) 847331807</span></p>
+        <p><span class="d-block"><span class="ion-ios-email h5 mr-3 text-primary"></span data-pt="Email:" data-en="Email:">Email:</span> <span> savanatur@gmail.com</span></p>
+      </div>
+
+      <!-- Coluna 4 -->
+      <div class="col-md-3 mb-5">
+        <p data-pt="Envia-nos uma mensagem" data-en="Send us a message">Envia-nos uma mensagem</p>
+        <form action="#" class="footer-newsletter">
+          <div class="form-group">
+            <input type="email" class="form-control" 
+                   placeholder="Email..." 
+                   data-pt="Email..." data-en="Email...">
+            <button type="submit" class="btn"><span class="fa fa-paper-plane"></span></button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="row pt-5">
+      <p class="col-md-6 text-left" data-pt="Todos os direitos reservados | Design por" data-en="All rights reserved | Design by">
+        Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos os direitos reservados | Design  <i class="icon-heart-o" aria-hidden="true"></i> by 
+        <a href="https://lacerda02.github.io/webprotfolio/" target="_blank">Leonardo Luis Lacerda</a>
+      </p>
+      
+      <p class="col-md-6 text-right social">
+        <a href="#"><span class="fa fa-tripadvisor"></span></a>
+        <a href="#"><span class="fa fa-facebook"></span></a>
+        <a href="#"><span class="fa fa-twitter"></span></a>
+        <a href="#"><span class="fa fa-linkedin"></span></a>
+        <a href="#"><span class="fa fa-vimeo"></span></a>
+      </p>
+    </div>
+  </div>
+</footer>
     
     <!-- EmailJS SDK -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -455,7 +506,21 @@ document.addEventListener("DOMContentLoaded", function() {
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.stellar.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
-    
+        <script>
+   const toggleBtn = document.getElementById("lang-toggle");
+let currentLang = "pt";
+
+toggleBtn.addEventListener("click", () => {
+  currentLang = currentLang === "pt" ? "en" : "pt";
+  toggleBtn.textContent = currentLang === "pt" ? "EN" : "PT";
+
+  document.querySelectorAll("[data-pt]").forEach(el => {
+    el.textContent = el.getAttribute(`data-${currentLang}`);
+  });
+});
+
+
+  </script>
     
     <script src="js/aos.js"></script>
     
